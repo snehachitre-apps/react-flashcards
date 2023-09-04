@@ -1,0 +1,54 @@
+.select-category{
+    align-content: center;
+    display:table;
+    justify-content:center;
+    padding-left: 60vh;
+    padding-top: 10px;
+    width: 100%;
+    min-width: 30ch;
+    max-width: 80ch;
+    margin-bottom: 20px;
+  
+    
+  }
+  button {
+    background-color: #046e4c;
+    border-radius: 15px;
+    color: white;
+    padding: 15px 32px;
+    margin-top: 40px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  body{
+    background-color: cadetblue;
+  }
+
+.question-card{
+   
+   
+}
+.flash-card{
+    word-wrap: break-word;
+    font-size: 24px;
+    line-height: 72px;
+    width: 216px;
+    border: 1px black solid;
+    margin: 18px;
+    cursor: pointer;
+    user-select: none;
+    object-fit:fill;
+    
+  }
+  
+  .flash-card.front {
+    background-color: rgb(219, 152, 65);
+  }
+  
+  .flash-card.back {
+    background-color: rgb(105, 242, 103);
+  }
