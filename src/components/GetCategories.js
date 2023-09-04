@@ -74,10 +74,10 @@ categories.map(categoryObject =>
 	rsOptions.push({ label: categoryObject.name, value: categoryObject.id }),
 );
 
-const handleSubmit = () =>{
+const handleSubmit = (e) =>{
 
 
-	// e.preventDefault();
+
 	const apiCall = async() => {
 	const options = {
 		method: 'GET',
@@ -100,18 +100,33 @@ const handleSubmit = () =>{
   
 		const questions = await response.json();
 		console.log("selected",selected);
-		if (!selected )
+		if (!selected  )
 		{
-			
-			setQuestionsArray([]);
-			// setShowQuestion(false);
+			alert("Please select a category!");
+			// setQuestionsArray([]);
+			setShowQuestion(false);
+			console.log("show question is: ",showQuestion);
+		}else {
+
+			setShowQuestion(true);
+			setQuestionsArray(questions["results"]);
+			console.log(questions["results"]);
+		
 		}
 		
-		setQuestionsArray(questions["results"]);
-		console.log(questions["results"]);
+			
+			
+		
+		// if(questionsArray.length==0)
+		// {
+		// 	alert("No questions for this category yet!");
+		// 	e.preventDefault();
+		// 	e.stopPropagation();
+		// }
 		
 		
-		setShowQuestion(true);
+		
+		
 		
 	  } catch (err) {
 		setErr(err.message);
@@ -137,9 +152,8 @@ const handleSubmit = () =>{
 					/>
 				</div>
             	<button type="Submit" onClick={handleSubmit}>Show Flashcards</button>
-				
-				{showQuestion ? <ShowQuestions questions={questionsArray} /> : null} 
-			
+				{console.log("in return: ",showQuestion)}
+				{showQuestion ? <ShowQuestions questions={questionsArray} /> : null}
 
 				{/* <select  onChange={handleSelect}
 				
