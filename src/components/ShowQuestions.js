@@ -3,6 +3,7 @@ import React, { useEffect , useState } from 'react';
 import Card from './Card';
 import { getActiveElement } from '@testing-library/user-event/dist/utils';
 
+
 export default function ShowQuestions({questions})	 {
 
 let randomQ={};

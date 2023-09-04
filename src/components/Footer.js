@@ -11,8 +11,7 @@ export default function Footer(){
                 <h6> &copy; 2023 Sneha Chitre</h6> 
                </footer>
                
-            // </div>
-
+    
 
     );
 }

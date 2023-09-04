@@ -2,7 +2,6 @@ import React from 'react';
 
 import { useState } from 'react';
 
-
 function Card({frontSide,backSide}){
 
   const [isFront,changeFace] = useState(true);
