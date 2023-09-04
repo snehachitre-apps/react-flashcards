@@ -1,18 +1,18 @@
 .select-category{
     align-content: center;
-    display:table;
+    display:inline-table;
     justify-content:center;
-    padding-left: 60vh;
-    padding-top: 10px;
-    width: 100%;
-    min-width: 30ch;
+    /* padding-left: 60vh; */
+    padding-top: 50px;
+    /* width: 100%; */
+    min-width: 80ch;
     max-width: 80ch;
     margin-bottom: 20px;
   
     
   }
   button {
-    background-color: #046e4c;
+    background-color: #975689;
     border-radius: 15px;
     color: white;
     padding: 15px 32px;
@@ -27,16 +27,30 @@
   body{
     background-color: cadetblue;
   }
-
-
+h1{
+    background-color: #1d1e1f;
+    color:white;
+    background-size: cover; 
+    padding: 20px;
+    display:flex;
+    justify-content: center;
+}
+body{
+    background-image: url("https://png.pngtree.com/thumb_back/fw800/background/20190429/pngtree-simple-opening-learning-background-image_110171.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 16 9;
+    padding: 50px;
+}
 .flash-card{
+    color: white;
     word-wrap: break-word;
     font-size: 24px;
     line-height: 72px;
     /* width: 216px; */
     border: 1px black solid;
     margin: 18px;
-    margin-left: 20%;
+    margin-left: 10%;
     cursor: pointer;
     user-select: none;
     object-fit:fill;
@@ -51,9 +65,26 @@
   }
   
   .flash-card.front {
-    background-color: rgb(219, 152, 65);
+    background-color: rgb(47, 13, 125);
   }
   
   .flash-card.back {
-    background-color: rgb(105, 242, 103);
+    background-color: rgb(6, 71, 3);
   }
+
+  .footer {
+    background-color: #1d1e1f;
+    color:white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display:flexbox;
+    padding-bottom: 1px;
+    height: 80px;
+    font-size: x-large;
+   text-align: left; 
+   justify-content: left;
+   object-fit: contain;
+  }
+  

@@ -143,7 +143,7 @@ const handleSubmit = (e) =>{
 	
 	return (
 			<div>
-				<h2>Select Flashcard Category</h2>
+				
 				<div className="select-category">
 				<Select   options={rsOptions}
 					value={rsOptions.find(obj => obj.value === selected)}
@@ -155,30 +155,7 @@ const handleSubmit = (e) =>{
 				{console.log("in return: ",showQuestion)}
 				{showQuestion ? <ShowQuestions questions={questionsArray} /> : null}
 
-				{/* <select  onChange={handleSelect}
 				
-				>
-				{categories.map((categoryObject, iterator) => {
-							return(
-							<option key= {iterator} value={categoryObject.id} label={categoryObject.name}>
-								
-							</option>
-							)
-				})
-				}
-
-      </select>
-	   */}
-
-
-				
-				
-					{/* // return (
-					// 	<button  key={categoryObject.id}>
-					// 	 {categoryObject.name} 
-					//    </button>
-					//    ); */}
-					
             
     	
 			</div>
